@@ -1,0 +1,9 @@
+{
+    "image-service": {
+        "api_port": 3010,
+        "api_url_path_prefix": "/api/image",
+        "api_url": "http://localhost:3010/api/image",
+        "images_root": "components/images-server/test/data",
+        "get_status_api_url": "http://localhost:3010/admin/get-status"
+    }
+}

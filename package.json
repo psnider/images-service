@@ -1,0 +1,45 @@
+{
+  "name": "@sabbatical/images-service",
+  "version": "0.0.1",
+  "description": "image files service",
+  "scripts": {
+    "clean": "rm -fr generated logs && npm run mkdirs",
+    "build": "npm run clean && npm run build-server",
+    "test": "echo no tests yet",
+    "reinstall": "rm -fr node_modules && npm install",
+    "mkdirs": "mkdir -p logs",
+    "build-server": "tsc -p components/server/src",
+    "run-server": "node generated/images-server.js"
+  },
+  "author": {
+    "name": "Peter Snider",
+    "email": "snider.peter@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@sabbatical/configure-local": "1.0.4",
+    "@sabbatical/drop-root-privileges": "0.1.0",
+    "@sabbatical/git-get-commit-id": "1.1.2",
+    "@sabbatical/server-status": "0.1.2",
+    "express": "4.14.0",
+    "pino": "3.0.5"
+  },
+  "devDependencies": {
+    "@types/chai": "3.4.34",
+    "@types/express": "4.0.33",
+    "@types/mocha": "2.2.32",
+    "@types/node": "6.0.46",
+    "@types/pino": "3.0.1",
+    "@types/request": "0.0.32",
+    "chai": "3.5.0",
+    "minimist": "1.2.0",
+    "mocha": "3.1.2",
+    "tslint": "3.15.1",
+    "typescript": "2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:psnider/images-service.git"
+  },
+  "typings": "./local-typings/package.d.ts"
+}

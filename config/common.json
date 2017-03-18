@@ -1,0 +1,5 @@
+{
+    "image-service": {
+        "get_status_api_url_path_prefix": "/admin/get-status"
+    }
+}

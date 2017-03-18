@@ -1,0 +1,11 @@
+{
+    "image-service": {
+        "uid": "image-service",
+        "gid": "image-service",
+        "api_port": 4930,
+        "api_url_path_prefix": "/api/image",
+        "api_url": "http://localhost:4930/api/image",
+        "images_root": "components/images-server/test/data",
+        "get_status_api_url": "http://localhost:4930/admin/get-status"
+    }
+}
